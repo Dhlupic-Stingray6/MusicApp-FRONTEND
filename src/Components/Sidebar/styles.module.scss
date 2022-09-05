@@ -1,0 +1,137 @@
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 24rem;
+	height: 100vh;
+	background: var(--purple);
+	display: flex;
+	flex-direction: column;
+	padding: 0 1rem;
+	z-index: 100;
+
+	.progress_container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 10rem;
+	}
+
+	.logo_img {
+		width: 15rem;
+		margin: 2.5rem;
+		border-radius: 5rem;
+		border-color: var(--primary);
+		border-style: double;
+		border-width: 0.5rem;
+
+	}
+
+	.menu_link {
+		color: var(--light-white);
+		display: flex;
+		align-items: center;
+		padding: 0.6rem 0;
+		border-radius: 0.2rem;
+		margin-bottom: 0.5rem;
+
+		svg,
+		img {
+			width: 3rem;
+			height: 3rem;
+			margin: 0 2rem;
+			object-fit: contain;
+			color: var(--blue)
+		}
+
+		span {
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+
+		&:hover {
+			color: var(--primary);
+		}
+	}
+
+	.admin_link {
+		color: var(--purple);
+		background-color: var(--secondary);
+		font-style: italic;
+		display: flex;
+		align-items: center;
+		padding: 0.6rem 0;
+		border-radius: 0.2rem;
+		margin-bottom: 0.5rem;
+		
+		justify-content: center;
+		
+		
+
+		span {
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+
+		&:hover {
+			color: var(--blue);
+		}
+	}
+
+	.create_playlist_btn {
+		color: var(--light-white);
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		margin: 2rem 0 2rem 0;
+
+		svg {
+			background-color: var(--blue);
+			color: var(--black);
+			width: 2rem;
+			height: 2rem;
+			margin: 0 2rem;
+			padding: 0.5rem;
+		}
+
+		span {
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+
+		&:hover {
+			color: var(--white);
+			svg {
+				background-color: var(--white);
+			}
+		}
+	}
+
+	.underline {
+		width: 90%;
+		margin: 1rem 5%;
+		height: 0.1rem;
+		background-color: var(--light-white);
+	}
+
+	.playlist_link {
+		color: var(--primary);
+		font-size: 1.5rem;
+		font-weight: 400;
+		padding: 0.6rem 0 0.6rem 2rem;
+
+		&:hover {
+			color: var(--secondary);
+		}
+	}
+
+	.active_menu {
+		color: var(--white);
+		background-color: var(--light-black);
+	}
+
+	.active_link {
+		color: var(--white);
+	}
+
+}
