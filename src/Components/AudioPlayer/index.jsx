@@ -74,6 +74,7 @@ const AudioPlayer = () => {
 				
 				<div className={styles.song_info}>
 					<p className={styles.song_name}>{currentSong.song.name}</p>
+          {console.log(currentSong.song.name)}
 					<p className={styles.song_artist}>{currentSong.song.artist}</p>
 				</div>
 			</div>
