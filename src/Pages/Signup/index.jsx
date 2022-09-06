@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Joi from 'joi'
-import axios from 'axios'
+import axios from '../../Api/axios'
 import { toast } from 'react-toastify'
 import { Link, useNavigate } from "react-router-dom";
 import passwordComplexity from "joi-password-complexity";
@@ -82,7 +82,7 @@ const Signup = () => {
           error.response.status < 500
         ) {
           toast.error(error.response.data)
-          console.log(error.response.data);
+          console.log(error.response);
         }
         else {
           console.log(error);
