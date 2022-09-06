@@ -4,7 +4,7 @@ import * as actions from './index';
 
 
 
-const apiUrl = 'http://localhost:8080/api/playlists';
+const apiUrl = 'https://mighty-falls-01509.herokuapp.com/api/playlists';
 
 export const createPlaylist = async (payload, dispatch) => {
     dispatch(actions.createPlaylistStart());

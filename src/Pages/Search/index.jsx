@@ -22,7 +22,7 @@ const Search = () => {
 
       try {
         setIsFetching(true);
-        const url = `http://localhost:8080/api/?search=${input.value}`;
+        const url = `/?search=${input.value}`;
         const { data } = await axiosInstance.get(url);
         setResults(data);
         setIsFetching(false);

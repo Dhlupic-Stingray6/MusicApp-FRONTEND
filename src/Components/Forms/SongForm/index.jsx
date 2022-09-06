@@ -48,7 +48,7 @@ const SongForm = () => {
         artist: Joi.string().required().label("Artist"),
         
         genre: Joi.string().required().label("Genre"),
-        duration: Joi.number().required,
+        duration: Joi.number().required(),
     };
 
     const handleInputState = (name, value) => {
@@ -72,6 +72,7 @@ const SongForm = () => {
             }
         } else {
             toast.error(error.message)
+            console.log(error)
         }
     };
 

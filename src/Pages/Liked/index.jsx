@@ -21,7 +21,7 @@ const Liked = () => {
 
         try {
             setIsFetching(true);
-            const url = `http://localhost:8080/api/songs/like`;
+            const url = `/songs/like`;
             const { data } = await axiosInstance.get(url);
 
             setSongs(data.data);

@@ -69,7 +69,7 @@ const Signup = () => {
     if(Object.keys(errors).length === 0) {
       try {
         setIsFetching(true);
-        const url = "http://localhost:8080/api/users";
+        const url = "/users";
         await axios.post(url, data);
         setIsFetching(false);
         toast.success("Account created successfully");

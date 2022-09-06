@@ -29,7 +29,7 @@ const Playlist = () => {
 	const getPlaylistSongs = async (id) => {
 		try {
 			setIsFetching(true);
-			const url =  "http://localhost:8080/api/playlists/" + id;
+			const url =  "/playlists/" + id;
 			const { data } = await axiosInstance.get(url);
 			setPlaylist(data.data.playlist);
 			setSongs(data.data.songs);

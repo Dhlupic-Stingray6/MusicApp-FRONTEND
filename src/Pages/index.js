@@ -10,4 +10,4 @@ export { default as Liked } from "./Liked/index";
 export { default as Profile } from "./Profile/index";
 export { default as UsersAdmin } from "./Admin/Users/index"
 export { default as SongsAdmin } from "./Admin/Songs/index"
-export { default as PlaylistAdmin } from "./Admin/Playlists/index"
+export {default as NotFound } from './NotFound/index'

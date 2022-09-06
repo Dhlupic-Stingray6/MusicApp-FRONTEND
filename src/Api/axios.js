@@ -13,7 +13,7 @@ if(root) {
 }
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8080/api" ,
+    baseURL: "https://mighty-falls-01509.herokuapp.com/api" ,
     headers: {
         "Content-Type" : "application/json",
         "x-auth-token": token ? token : "",

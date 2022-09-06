@@ -21,11 +21,7 @@
 			background-color: var(--purple);
 			color: var(--blue);
 
-			&:hover {
-				transform: scale(1.10);
-				background-color: var(--light-pink);
-				color: var(--purple)
-			}
+			
 
 			svg {
 				width: 3.5rem;

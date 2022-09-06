@@ -5,7 +5,7 @@ import * as actions  from './index';
 
 
 
-const apiUrl = "http://localhost:8080/api";
+const apiUrl = "https://mighty-falls-01509.herokuapp.com/api";
 
 export const getUser = async (payload, dispatch) => {
     dispatch(actions.getUserStart());

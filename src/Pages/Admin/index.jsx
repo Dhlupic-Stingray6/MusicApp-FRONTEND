@@ -39,13 +39,13 @@ const Admin = () => {
           			<p>{songs && songs.length}</p>
        	 	</Paper>
 		</Link>
-		<Link to={"/admin/playlists"}>
+		
 			<Paper className={styles.card}>
           		<LibraryMusicIcon />
           		<span>Playlists</span>
           		<p>{playlists && playlists.length}</p>
         	</Paper>
-		</Link>
+		
 			
 
 		</div>

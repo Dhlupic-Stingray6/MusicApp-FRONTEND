@@ -18,7 +18,8 @@ const Home = () => {
   const getRandomPlaylists = async () => {
     try {
       setIsFetching(true);
-      const url = "http://localhost:8080/api/playlists/random";
+      const url = "/playlists/random";
+      //console.log(url)
       const { data } = await axiosInstance.get(url);
       const array1 = data.data.splice(0, 4);
       const array2 = data.data;

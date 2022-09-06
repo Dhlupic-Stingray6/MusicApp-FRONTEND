@@ -9,7 +9,7 @@ import { getAllPlaylists } from './Api/Playlists/api';
 import { getAllSongs }  from './Api/Songs/api'
 
 import './Global.css';
-import { Admin, Home, Library, Liked, Login, Main, Playlist, Profile, Signup, Search, UsersAdmin, SongsAdmin, PlaylistAdmin } from './Pages';
+import { Admin, Home, Library, Liked, Login, Main, Playlist, Profile, Signup, Search, UsersAdmin, SongsAdmin, NotFound } from './Pages';
 import  { AudioPlayer ,Navbar ,Sidebar, UserForm, SongForm }  from './Components/';
 
 
@@ -62,7 +62,7 @@ function App() {
         location.pathname !== '/' &&
         location.pathname !== '/signup' &&
         location.pathname !== '/landing' &&
-        location.pathname !== '/notfound' && (
+        location.pathname !== '/not-found' && (
           <Fragment>
             <Navbar />
             <Sidebar />
@@ -79,6 +79,7 @@ function App() {
         <Route element={<Main/>} path="/" />
         <Route element={<Signup/>} path="/signup"/>
         <Route element={<Login/>} path="/login"/>
+        <Route element={<NotFound/>} path="*" />
         { user && (
           <Fragment>
             <Route element ={<Home/>} path="/home" exact/>
@@ -87,6 +88,7 @@ function App() {
             <Route element={<Library/>} path="/collection/playlists" exact/>
             <Route element={<Playlist/>} path="/playlist/:id" exact/> 
             <Route element={<Profile/>} path="/me" exact/>
+            
             {user?.isAdmin && (
               <Fragment>
                 <Route element={<Admin/>} path="/admin" exact/>
@@ -95,7 +97,7 @@ function App() {
                 <Route element={<UserForm/>}  path="/users/:id" />
                 <Route element={<SongsAdmin/>} path="/admin/songs"/>
                 <Route element={<SongForm/>} path="/songs/:id"/>
-                <Route element={<PlaylistAdmin/>} path="/admin/playlists" />
+                
                 
               </Fragment>
             )}

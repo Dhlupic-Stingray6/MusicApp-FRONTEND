@@ -14,6 +14,7 @@ const PlaylistModel = ({ closeModel, playlist }) => {
 	const [data, setData] = useState({
 		name: "",
 		desc: "",
+		img: "",
 		
 	});
 	const [isFetching, setIsFetching] = useState(false);
@@ -31,7 +32,7 @@ const PlaylistModel = ({ closeModel, playlist }) => {
 		try {
 			setIsFetching(true);
 			const url =
-				 `http:localhost:8080/api/playlists/edit/${playlist._id}`;
+				 `/playlists/edit/${playlist._id}`;
 			const { data: res } = await axiosInstance.put(url, data);
 			toast.success(res.message);
 			setIsFetching(false);

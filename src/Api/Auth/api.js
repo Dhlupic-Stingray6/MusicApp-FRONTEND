@@ -10,7 +10,7 @@ export const login = async (payload, dispatch) => {
     dispatch(loginStart());
 
     try {
-        const url =  "http://localhost:8080/api/login"
+        const url =  "https://mighty-falls-01509.herokuapp.com/api/login"
         const { data } = await axios.post(url, payload);
 
         const decodeData = jwt_decode(data.data);
