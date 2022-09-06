@@ -67,7 +67,7 @@ function App() {
             <Navbar />
             <Sidebar />
             
-            {/* currentSong && <AudioPlayer/> */}
+            {currentSong && <AudioPlayer/>}
             
           </Fragment>
         )
