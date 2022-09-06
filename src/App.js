@@ -25,6 +25,7 @@ function App() {
   const navigate = useNavigate();
   
 
+  console.log(currentSong)
   
   
 
@@ -67,7 +68,7 @@ function App() {
             <Navbar />
             <Sidebar />
             
-            {currentSong && <AudioPlayer/>}
+            { currentSong ? <AudioPlayer/> : null}
             
           </Fragment>
         )

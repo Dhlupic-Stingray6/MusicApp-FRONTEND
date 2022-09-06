@@ -68,6 +68,7 @@ const AudioPlayer = () => {
       : dispatch(setCurrentSong({ ...currentSong, action: "play" }));
   };
 
+    //console.log(currentSong)
     return (
         <div className={styles.audio_player}> 
             <div className={styles.left}>
