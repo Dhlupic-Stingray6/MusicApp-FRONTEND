@@ -19,7 +19,7 @@ const Library = () => {
         >
           <h1>Liked songs</h1>
           <p>
-            {user.likedSongs.length ? 0 + "  " : user.likedSongs.length + " "}
+            {user.likedSongs === null ? 0 + "  " : user.likedSongs.length + " "}
              Liked Songs
           </p>
         </Link>
